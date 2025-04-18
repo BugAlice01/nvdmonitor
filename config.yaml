@@ -1,0 +1,25 @@
+# 扫描参数配置
+# 任务名称
+target: 2025
+# 产品名称配置(NVD搜索的内容)
+querry: 2025
+# 监控时间配置(如0为截止本日0:00新增,1为截止昨日0:00新增)
+day_ago: 0
+# 扫描页数
+page: 1-5
+
+# 企微机器人推送配置
+wechat_bot:
+  name: nvdmonitor
+  webhook_url: ""
+
+# 调度配置
+scheduler:
+  mode: "fixed"  # fixed 或 interval
+  # fixed模式配置 (每天固定时间执行)
+  fixed_times:
+    - "09:00"
+    - "14:00"
+    - "18:00"
+  # interval模式配置 (每隔几小时执行)
+  interval_hours: 6
