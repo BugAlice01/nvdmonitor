@@ -1,0 +1,2 @@
+# nvdmonitor
+nvdmonitor可以定时监控NVD漏洞库指定目标，并通过企业微信定时推送新增漏洞详情
